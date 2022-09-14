@@ -1,4 +1,4 @@
-// import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
 // import HomeIcon from '@mui/icons-material/Home';
 // import CodeIcon from '@mui/icons-material/Code';
 // import OndemandVideoIcon from '@mui/icons-material/OndemandVideo';
