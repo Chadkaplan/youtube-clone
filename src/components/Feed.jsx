@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Box, Stack, Typography } from "@mui/material";
+import SideBar from "./Sidebar";
 
 const Feed = () => {
   return (
@@ -12,7 +13,12 @@ const Feed = () => {
           px: { sx: 0, md: 2 },
         }}
       >
-        <Typography className="copyright" variant="body2" sx={{ mt: 1.5, color: "#fff", }}>
+        <SideBar />
+        <Typography
+          className="copyright"
+          variant="body2"
+          sx={{ mt: 1.5, color: "#fff" }}
+        >
           Copyright © 2022 Chad Kaplan
         </Typography>
       </Box>
