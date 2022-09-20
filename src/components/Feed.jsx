@@ -22,6 +22,12 @@ const Feed = () => {
           Copyright © 2022 Chad Kaplan
         </Typography>
       </Box>
+      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
+        <Typography variant="h4" fontWeight="bold" mb={2} sx={{ color: "white" }}>
+          New <span style={{ color: "#FC1503" }}>videos</span>
+        </Typography>
+
+      </Box>
     </Stack>
   );
 };
