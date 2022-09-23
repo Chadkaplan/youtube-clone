@@ -8,9 +8,10 @@ import Videos from "./Videos";
 const Feed = () => {
 
 const [selectedCategory, setSelectedCategory] = useState('New ')
+const [videos, setVideos] = useState([])
 
 useEffect(() => {
-  fetchFromAPI(`search?part=snippet&q=${selectedCategory}`);
+  fetchFromAPI(`search?part=snippet&q=${selectedCategory}`).then((data) => {setVideos(data.items)});
 }, [selectedCategory])
 
 
@@ -41,7 +42,7 @@ useEffect(() => {
         >
           {selectedCategory}<span style={{ color: "#FC1503" }}>videos</span>
         </Typography>
-        <Videos />
+        <Videos videos={videos} />
       </Box>
     </Stack>
   );
